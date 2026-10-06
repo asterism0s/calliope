@@ -16,6 +16,18 @@ An editorial theme for [Obsidian](https://obsidian.md). Cream paper and ink in l
 - **Colorful file explorer**: folder and file icons, with six folder colors applied in sequence.
 - **Paper-like tabs**: the active tab title uses the accent color and casts a soft shadow, like a sheet resting on another.
 
+## Fonts
+The fonts are not bundled with the theme. For the intended look, install them on your system. All four are free:
+
+|Use|Font|
+|---|---|
+|Body text|[Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)|
+|Headings|[Fraunces](https://fonts.google.com/specimen/Fraunces)|
+|Interface|[Figtree](https://fonts.google.com/specimen/Figtree)|
+|Code|[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)|
+Without them, the theme falls back to similar fonts already on your system.
+
+
 ## Installation
 ### From Obsidian
 1. Open **Settings → Appearance**.
