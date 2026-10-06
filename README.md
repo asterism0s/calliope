@@ -40,16 +40,5 @@ Without them, the theme falls back to similar fonts already on your system.
 3. Move both files into that folder.
 4. Open **Settings → Appearance** and choose **Calliope** under **Themes**.
 
-## Fonts
-The fonts are not bundled with the theme. For the intended look, install them on your system. All four are free:
-
-|Use|Font|
-|---|---|
-|Body text|[Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)|
-|Headings|[Fraunces](https://fonts.google.com/specimen/Fraunces)|
-|Interface|[Figtree](https://fonts.google.com/specimen/Figtree)|
-|Code|[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)|
-Without them, the theme falls back to similar fonts already on your system.
-
 ## Credits
 - File explorer icons from [Lucide](https://lucide.dev), under the ISC license.
