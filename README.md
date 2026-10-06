@@ -1,7 +1,7 @@
 # Calliope
 An editorial theme for [Obsidian](https://obsidian.md). Cream paper and ink in light mode, paper by candlelight in dark mode, with typography borrowed from books and magazines.
 
-![Calliope theme screenshot](screenshot.png)
+![Calliope theme screenshot](calliope-preview.webp)
 
 ## Features
 - **Editorial typography**: a serif for body text, a display serif for headings, and a clean sans-serif for the interface.
