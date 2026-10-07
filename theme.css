@@ -54,7 +54,7 @@ body {
   --blockquote-color: var(--text-muted);
 
   --calliope-code-border: color-mix(in srgb, var(--text-faint) 30%, transparent);  /* dashed border color */
-  --calliope-dot-color: color-mix(in srgb, var(--text-faint) 10%, transparent);   /* dot pattern color */
+  --calliope-dot-color: color-mix(in srgb, var(--text-faint) 18%, transparent);   /* dot pattern color */
 
   /*
   File explorer icons from Lucide
@@ -279,7 +279,7 @@ body {
   border-left: 1.5px dashed var(--calliope-code-border);
   border-right: 1.5px dashed var(--calliope-code-border);
   background-image: radial-gradient(circle, var(--calliope-dot-color) 1px, transparent 1.5px);
-  background-size: 10px 10px;   /* fallback where the lh unit is unsupported */
+  background-size: 10px 10px; /* fallback where the lh unit is unsupported */
   background-size: 0.5lh 0.5lh;
 }
 .markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-codeblock-begin {
