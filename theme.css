@@ -223,12 +223,26 @@ body {
   border-left: none;
   border-right: none;
 }
+
 .markdown-rendered th {
   font-family: var(--font-interface-theme);
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
+}
+
+/* Taller table rows */
+.markdown-rendered th,
+.markdown-rendered td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* Live Preview: spacing lives on an inner element of the cell */
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Inline code slightly smaller than body text */
