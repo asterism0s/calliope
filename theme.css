@@ -111,7 +111,8 @@ body {
 
   --calliope-icon-l: 45%; /* lightness of the folder colors */
 
-  --calliope-tab-shadow: rgba(60, 40, 20, 0.14); /* active tab shadow */
+  /* Active tab: soft shadow, light mode only */
+  --calliope-tab-shadow: rgba(60, 40, 20, 0.35);
 }
 
 
