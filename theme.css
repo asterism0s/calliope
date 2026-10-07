@@ -165,7 +165,7 @@ body {
 }
 
 /* Reading view: remove the top margin of the block right after a heading */
-.markdown-rendered div:has(> :is(h1, h2, h3, h4, h5, h6)) + div > :is(p, ul, ol, blockquote, pre, table) {
+.markdown-rendered :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + div > :is(p, ul, ol, blockquote, pre, table) {
   margin-top: 0;
 }
 
