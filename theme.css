@@ -297,24 +297,30 @@ body {
   height: 1em;
   margin-right: 0.45em;
   vertical-align: -0.15em;
+  -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
 }
 
 /* Folders: closed icon, colored by position */
 .nav-folder-title-content::before {
+  -webkit-mask-image: var(--calliope-icon-folder);
   mask-image: var(--calliope-icon-folder);
   background-color: var(--calliope-folder-color, var(--text-muted));
 }
 
 /* Open folder: swap the icon */
 .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before {
+  -webkit-mask-image: var(--calliope-icon-folder-open);
   mask-image: var(--calliope-icon-folder-open);
 }
 
 /* .md files: page icon, in gray */
 .nav-file-title[data-path$=".md"] .nav-file-title-content::before {
+  -webkit-mask-image: var(--calliope-icon-file);
   mask-image: var(--calliope-icon-file);
   background-color: var(--text-faint);
 }
