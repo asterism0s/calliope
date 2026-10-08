@@ -40,5 +40,11 @@ Without them, the theme falls back to similar fonts already on your system.
 3. Move both files into that folder.
 4. Open **Settings → Appearance** and choose **Calliope** under **Themes**.
 
+## Feedback and suggestions
+Missing something in Calliope? Have an idea, or found something that looks off?
+I'd love to hear from you. [Open an issue](https://github.com/asterism0s/calliope/issues)
+on GitHub with your suggestion, and include a screenshot if it helps explain what you mean. 
+You can also reach me by [email](mailto:sarahssiqueira@proton.me).
+
 ## Credits
 - File explorer icons from [Lucide](https://lucide.dev), under the ISC license.
