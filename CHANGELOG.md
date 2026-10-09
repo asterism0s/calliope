@@ -6,17 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Planned
+
 Ideas for upcoming releases. Plans may change.
 
 - Custom checkboxes: icons for alternate task states such as `[!]`, `[?]` and `[>]`
 - Speech bubble callouts
 
 ## [Unreleased]
-### Changed
-- License changed from MIT to GPL-3.0
 
 ### Added
 - Buy Me a Coffee link
+
+### Changed
+- License changed from MIT to GPL-3.0
 
 ## [1.1.0] - 2026-10-07
 
