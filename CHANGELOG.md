@@ -15,6 +15,8 @@ Ideas for upcoming releases. Plans may change.
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-10-09
+
 ### Added
 - Buy Me a Coffee link
 
