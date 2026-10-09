@@ -58,7 +58,7 @@ You can also reach me by [email](mailto:sarahssiqueira@proton.me).
 
 ## Offerings
 
-I made Calliope for my own notes, and it's completely free. If it has found a home in yours too and you feel like showing your appreciation, you can always leave an offering for the muse ;)
+I made Calliope for my own notes, and it's completely free. If it has found a home in yours too and you feel like showing your appreciation, you can always [leave an offering for the muse](https://buymeacoffee.com/asterism0s) ;)
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/asterism0s)
 
