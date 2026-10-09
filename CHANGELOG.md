@@ -11,6 +11,7 @@ Ideas for upcoming releases. Plans may change.
 
 - Custom checkboxes: icons for alternate task states such as `[!]`, `[?]` and `[>]`
 - Speech bubble callouts
+- Separate paper grain intensity for light and dark modes
 
 ## [Unreleased]
 
