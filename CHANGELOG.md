@@ -12,6 +12,11 @@ Ideas for upcoming releases. Plans may change.
 - Speech bubble callouts
 
 ## [Unreleased]
+### Changed
+- License changed from MIT to GPL-3.0
+
+### Added
+- Buy Me a Coffee link
 
 ## [1.1.0] - 2026-10-07
 
