@@ -53,12 +53,12 @@ body {
 
  
   --blockquote-border-thickness: 2px;
-  --blockquote-style: italic;        /* Live Preview */
-  --blockquote-font-style: italic;   /* Reading view */
+  --blockquote-style: italic;
+  --blockquote-font-style: italic;
   --blockquote-color: var(--text-muted);
 
-  --calliope-code-border: color-mix(in srgb, var(--text-faint) 30%, transparent);  /* dashed border color */
-  --calliope-dot-color: color-mix(in srgb, var(--text-faint) 18%, transparent);   /* dot pattern color */
+  --calliope-code-border: color-mix(in srgb, var(--text-faint) 30%, transparent);
+  --calliope-dot-color: color-mix(in srgb, var(--text-faint) 18%, transparent);
 
   /*
   File explorer icons from Lucide
@@ -82,6 +82,16 @@ body {
   --tab-text-color-active: var(--color-accent);
   --tab-text-color-focused-active: var(--color-accent);
   --tab-text-color-focused-active-current: var(--color-accent);
+
+  /* Mermaid diagrams */
+  --calliope-diagram-node-bg: var(--background-secondary);
+  --calliope-diagram-node-border: var(--text-faint);
+  --calliope-diagram-decision-border: var(--color-accent);
+  --calliope-diagram-line: var(--text-muted);
+  --calliope-diagram-text: var(--text-normal);
+  --calliope-diagram-label-bg: var(--background-primary);
+  --calliope-diagram-group-border: var(--text-faint);
+
 }
 
 
@@ -92,9 +102,9 @@ body {
   --accent-s: 58%;
   --accent-l: 46%;
 
-  --background-primary: #FBF8F3; /* note area */
+  --background-primary: #FBF8F3; 
   --background-primary-alt: #F5F0E8;
-  --background-secondary: #F3EEE6; /* sidebars */
+  --background-secondary: #F3EEE6;
   --background-secondary-alt: #EDE6DB;
   --background-modifier-border: #E2D9CC;
   --background-modifier-hover: rgba(60, 40, 20, 0.06);
@@ -114,6 +124,7 @@ body {
   --h3-color: #6B6A3A;
 
   --calliope-icon-l: 45%; /* lightness of the folder colors */
+  --calliope-diagram-label-bg: #FBF8F3; /* Mermaid edge labels */
 
   /* Active tab: soft shadow, light mode only */
   --calliope-tab-shadow: rgba(60, 40, 20, 0.35);
@@ -126,9 +137,9 @@ body {
   --accent-s: 62%;
   --accent-l: 64%;
   
-  --background-primary: #1C1A18;  /* note area */
+  --background-primary: #1C1A18;
   --background-primary-alt: #22201D;
-  --background-secondary: #171513; /* sidebars */
+  --background-secondary: #171513;
   --background-secondary-alt: #211E1B;
   --background-modifier-border: #34302B;
   --background-modifier-hover: rgba(255, 240, 220, 0.05);
@@ -148,8 +159,8 @@ body {
   --h3-color: #B8B67E;
   
   --calliope-icon-l: 65%; /* lightness of the folder colors */
+  --calliope-diagram-label-bg: #1C1A18; /* Mermaid edge labels */
 
-  /* --calliope-tab-shadow: rgba(0, 0, 0, 0.45); active tab shadow */
 }
 
 
@@ -369,3 +380,61 @@ body {
   font-weight: 500;
 }
 
+/* ---------- 6. MERMAID DIAGRAMS ---------- */
+/* Mermaid embeds its own styles with ID selectors, so !important is needed to override them. */
+
+/* Text: interface font and theme colour */
+.mermaid :is(text, tspan, .nodeLabel, .edgeLabel, .label, .cluster-label) {
+  font-family: var(--font-interface) !important;
+  font-size: 0.875rem !important;
+  color: var(--calliope-diagram-text) !important;
+  fill: var(--calliope-diagram-text) !important;
+}
+
+/* Nodes: paper-toned boxes with a hairline border */
+.mermaid .node :is(rect, circle, ellipse, polygon, path):not(.label *) {
+  fill: var(--calliope-diagram-node-bg) !important;
+  stroke: var(--calliope-diagram-node-border) !important;
+  stroke-width: 1px !important;
+  filter: none !important; /* removes the drop shadow some Mermaid versions add */
+}
+
+/* Decision nodes (diamonds) get the accent colour */
+.mermaid .node polygon:not(.label *) {
+  stroke: var(--calliope-diagram-decision-border) !important;
+}
+
+/* Edges and arrowheads */
+.mermaid :is(.flowchart-link, .edgePath .path) {
+  stroke: var(--calliope-diagram-line) !important;
+  stroke-width: 1.25px !important;
+}
+.mermaid :is(.marker, .arrowMarkerPath, .arrowheadPath) {
+  fill: var(--calliope-diagram-line) !important;
+  stroke: var(--calliope-diagram-line) !important;
+}
+
+/* Edge labels sit on the page colour */
+.mermaid :is(.edgeLabel, .labelBkg, .edgeLabel p) {
+  background-color: var(--calliope-diagram-label-bg) !important;
+  color: var(--text-muted) !important;
+}
+.mermaid .edgeLabel rect {
+  fill: var(--calliope-diagram-label-bg) !important;
+}
+
+/* Subgraphs: dashed outline, like the code blocks */
+.mermaid .cluster :is(rect, path) {
+  fill: transparent !important;
+  stroke: var(--calliope-diagram-group-border) !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 4 3 !important;
+  filter: none !important;
+}
+
+
+/* Dark mode: undo any colour inversion applied to diagrams */
+.theme-dark .mermaid,
+.theme-dark .mermaid svg {
+  filter: none !important;
+}
