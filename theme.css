@@ -124,7 +124,8 @@ body {
   --h3-color: #6B6A3A;
 
   --calliope-icon-l: 45%; /* lightness of the folder colors */
-  --calliope-diagram-label-bg: #FBF8F3; /* Mermaid edge labels */
+  --calliope-diagram-label-bg: #f6f2eb; /* Mermaid edge labels */
+  --calliope-diagram-node-bg: transparent; /* Mermaid nodes: no fill in dark mode */
 
   /* Active tab: soft shadow, light mode only */
   --calliope-tab-shadow: rgba(60, 40, 20, 0.35);
@@ -159,7 +160,8 @@ body {
   --h3-color: #B8B67E;
   
   --calliope-icon-l: 65%; /* lightness of the folder colors */
-  --calliope-diagram-label-bg: #1C1A18; /* Mermaid edge labels */
+  --calliope-diagram-label-bg: #2d2a27; /* Mermaid edge labels */
+  --calliope-diagram-node-bg: transparent; /* Mermaid nodes: no fill in dark mode */
 
 }
 
@@ -437,4 +439,28 @@ body {
 .theme-dark .mermaid,
 .theme-dark .mermaid svg {
   filter: none !important;
+}
+
+/* Edge labels: breathing room on both sides of the text. */
+.mermaid .labelBkg {
+  box-shadow:
+    -0.375rem 0 0 var(--calliope-diagram-label-bg),
+     0.375rem 0 0 var(--calliope-diagram-label-bg) !important;
+}
+.mermaid .edgeLabel foreignObject {
+  overflow: visible !important;
+}
+
+/* Arrowheads: leave a small gap between the tip and the node it points to */
+.mermaid marker[id*="pointEnd"] {
+  overflow: visible !important;
+}
+.mermaid marker[id*="pointEnd"] :is(.arrowMarkerPath, .arrowheadPath) {
+  transform: translateX(-5px);
+}
+
+/* Edges and arrowheads */
+.mermaid :is(.flowchart-link, .edgePath .path) {
+  stroke: var(--calliope-diagram-line) !important;
+  stroke-width: 1.15px !important;   /* ← esta linha */
 }
