@@ -15,6 +15,9 @@ Ideas for upcoming releases. Plans may change.
 
 ## [Unreleased]
 
+### Added
+- Mermaid diagrams now follow the theme's colours and fonts in light and dark mode
+
 ## [1.1.1] - 2026-10-09
 
 ### Added
@@ -44,7 +47,8 @@ Ideas for upcoming releases. Plans may change.
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/asterism0s/calliope/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/asterism0s/calliope/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/asterism0s/calliope/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/asterism0s/calliope/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/asterism0s/calliope/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/asterism0s/calliope/releases/tag/1.0.0
