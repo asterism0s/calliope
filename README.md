@@ -4,6 +4,8 @@ An editorial theme for [Obsidian](https://obsidian.md). Cream paper and ink in l
 
 ![Calliope theme screenshot](calliope-preview.webp)
 
+**Note:** Calliope uses recent CSS features. For the best results, download and install the [latest Obsidian installer](https://obsidian.md/download).
+
 ## Features
 
 - **Editorial typography**: a serif for body text, a display serif for headings, and a clean sans-serif for the interface.
